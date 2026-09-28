@@ -326,257 +326,211 @@ footer p {
    WILDLIFE CORRIDORS PAGE
    ========================================= */
 
-
-/* Hero */
-
 .corridor-hero {
-    min-height: 70vh;
-
-    display: flex;
-    align-items: center;
-
-    padding: 90px 10%;
-
-    background:
-        linear-gradient(
-            rgba(25, 50, 35, 0.70),
-            rgba(25, 50, 35, 0.70)
-        ),
-        url("https://images.unsplash.com/photo-1448375240586-882707db888b")
-        center / cover;
+    padding: 90px 8% 70px;
+    text-align: left;
 }
 
-.corridor-hero-content {
-    max-width: 850px;
-    color: white;
+.corridor-hero .eyebrow {
+    font-size: 0.85rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 25px;
 }
 
 .corridor-hero h1 {
-    font-size: clamp(3rem, 7vw, 6rem);
-    line-height: 1;
-    margin-bottom: 30px;
+    font-size: clamp(3.5rem, 7vw, 7rem);
+    line-height: 0.95;
+    margin: 0 0 35px;
+    max-width: 1100px;
 }
 
-.corridor-hero p:not(.section-label) {
-    max-width: 650px;
-    font-size: 1.2rem;
+.corridor-hero p {
+    max-width: 900px;
+    font-size: 1.15rem;
+    line-height: 1.7;
 }
 
 
 /* Introduction */
 
 .corridor-intro {
-    padding: 100px 12%;
-    background: #f4f1e8;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 30px;
 }
 
-.intro-text {
-    max-width: 900px;
+.corridor-intro h2 {
+    font-size: 3rem;
+    margin-bottom: 25px;
 }
 
-.intro-text p:not(.section-label) {
+.corridor-intro p {
     font-size: 1.1rem;
-    margin-bottom: 20px;
+    line-height: 1.8;
+    margin-bottom: 15px;
 }
 
 
-/* Diagram */
+/* Section headings */
 
-.diagram-section {
-    padding: 100px 8%;
-    background: #dfe5d9;
+.diagram-section,
+.map-section,
+.benefits-section,
+.genetics-connection,
+.human-connection {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 30px;
 }
+
+.diagram-section h2,
+.map-section h2,
+.benefits-section h2,
+.genetics-connection h2,
+.human-connection h2 {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+}
+
+
+/* Without vs. With */
 
 .comparison {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    margin-top: 45px;
 }
 
 .landscape-card {
-    background: #f4f1e8;
     padding: 35px;
+    border-radius: 20px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .landscape-card h3 {
+    font-size: 1.5rem;
     margin-bottom: 25px;
 }
 
 .landscape {
-    min-height: 180px;
+    min-height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-size: 2.5rem;
+    border-radius: 15px;
+}
 
+.without {
+    border: 2px solid #c9c5b8;
+}
+
+.with {
+    border: 2px solid #9cae8b;
+}
+
+.landscape-icons {
     display: flex;
     align-items: center;
     justify-content: space-around;
-
-    margin-bottom: 25px;
-
-    background: #b9c8ad;
-    padding: 20px;
-}
-
-.habitat {
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-.barrier {
+    width: 100%;
     font-size: 2.5rem;
 }
 
-.corridor-path {
-    text-align: center;
-    font-size: 1.4rem;
-    line-height: 1.2;
-}
 
-.landscape-card p {
-    font-size: 0.95rem;
-}
-
-
-/* Map */
+/* Map section */
 
 .map-section {
-    padding: 100px 12%;
-    background: #26352b;
-    color: white;
+    text-align: center;
 }
 
-.map-section h2 {
-    max-width: 800px;
+.map-section p {
+    max-width: 750px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
 }
 
-.map-section > p:not(.section-label):not(.map-caption) {
-    max-width: 800px;
-    font-size: 1.1rem;
-    margin-bottom: 30px;
+.map-button {
+    display: inline-block;
+    padding: 15px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.2s ease;
 }
 
-.map-caption {
-    margin-top: 25px;
-    font-size: 0.8rem;
-    opacity: 0.7;
+.map-button:hover {
+    transform: translateY(-3px);
 }
 
 
 /* Benefits */
 
-.benefits-section {
-    padding: 100px 8%;
-    background: #f4f1e8;
-}
-
-.benefits-intro {
-    margin-bottom: 35px;
-    font-size: 1.05rem;
-}
-
 .benefit-buttons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+    margin-bottom: 30px;
 }
 
 .benefit-buttons button {
+    padding: 20px;
     border: none;
-
-    padding: 25px;
-
-    background: #dfe5d9;
-
-    color: #26352b;
-
+    border-radius: 15px;
     font-size: 1rem;
-
-    font-weight: bold;
-
+    font-weight: 700;
     cursor: pointer;
-
-    transition: transform 0.2s ease,
-                background 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 .benefit-buttons button:hover {
-    transform: translateY(-5px);
-    background: #cbd6c3;
+    transform: translateY(-3px);
 }
 
-
-/* Interactive information */
-
 .benefit-display {
-    margin-top: 30px;
-
-    padding: 40px;
-
-    background: #26352b;
-
-    color: white;
-
-    min-height: 170px;
+    padding: 35px;
+    border-radius: 20px;
+    min-height: 130px;
 }
 
 .benefit-display h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
+    margin-top: 0;
+    font-size: 1.6rem;
 }
 
 .benefit-display p {
-    max-width: 800px;
+    line-height: 1.7;
 }
 
 
 /* Genetics connection */
 
 .genetics-connection {
-    padding: 100px 8%;
-
-    background: #dfe5d9;
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 60px;
-
-    align-items: center;
-}
-
-.genetics-connection p:not(.section-label) {
-    max-width: 700px;
-
-    margin-bottom: 30px;
-
-    font-size: 1.05rem;
+    text-align: center;
 }
 
 .connection-flow {
     display: flex;
-
-    align-items: center;
-
     justify-content: center;
-
-    gap: 12px;
-
-    text-align: center;
-
+    align-items: center;
+    gap: 20px;
     flex-wrap: wrap;
+    margin: 40px 0;
 }
 
-.connection-flow div {
-    padding: 20px;
-
-    background: #f4f1e8;
-
-    min-width: 100px;
-
-    font-size: 1rem;
+.connection-step {
+    padding: 20px 25px;
+    border-radius: 15px;
+    font-weight: 700;
 }
 
-.connection-flow span {
+.connection-arrow {
     font-size: 1.5rem;
 }
 
@@ -584,53 +538,27 @@ footer p {
 /* Human connection */
 
 .human-connection {
-    padding: 100px 8%;
-
-    background: #f4f1e8;
+    text-align: center;
 }
 
-.human-connection > p:not(.section-label) {
+.human-connection p {
     max-width: 800px;
-
-    font-size: 1.1rem;
-
-    margin-bottom: 40px;
+    margin: 0 auto 30px;
+    line-height: 1.8;
 }
 
 .next-topics {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
+    display: flex;
+    justify-content: center;
     gap: 20px;
-
-    max-width: 900px;
+    flex-wrap: wrap;
 }
 
 .next-topics a {
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 8px;
-
-    padding: 30px;
-
-    background: #dfe5d9;
-
-    color: #26352b;
-
     text-decoration: none;
-
-    transition: transform 0.2s ease;
-}
-
-.next-topics a:hover {
-    transform: translateY(-5px);
-}
-
-.next-topics span {
-    font-size: 0.9rem;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-weight: 700;
 }
 
 
@@ -638,31 +566,32 @@ footer p {
 
 @media (max-width: 800px) {
 
+    .corridor-hero {
+        padding: 60px 25px;
+    }
+
+    .corridor-hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .corridor-intro h2,
+    .diagram-section h2,
+    .map-section h2,
+    .benefits-section h2,
+    .genetics-connection h2,
+    .human-connection h2 {
+        font-size: 2.2rem;
+    }
+
     .comparison {
         grid-template-columns: 1fr;
     }
 
     .benefit-buttons {
-        grid-template-columns: 1fr;
-    }
-
-    .genetics-connection {
-        grid-template-columns: 1fr;
-    }
-
-    .next-topics {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .connection-flow {
         flex-direction: column;
-    }
-
-    .connection-flow span {
-        transform: rotate(90deg);
-    }
-
-    .corridor-hero {
-        padding: 70px 8%;
     }
 }
