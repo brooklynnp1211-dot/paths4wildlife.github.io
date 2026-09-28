@@ -345,29 +345,30 @@ footer p {
    ========================================= */
 
 .corridor-hero {
-    padding: 90px 8% 70px;
-    text-align: left;
-}
-
-.corridor-hero .eyebrow {
-    font-size: 0.85rem;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 25px;
+    padding: 100px 12%;
+    background: #dfe5d9;
 }
 
 .corridor-hero h1 {
-    font-size: clamp(3.5rem, 7vw, 7rem);
-    line-height: 0.95;
-    margin: 0 0 35px;
-    max-width: 1100px;
+    color: #26352b;
+    font-size: clamp(3rem, 7vw, 5rem);
+    line-height: 1.1;
+    margin-bottom: 25px;
+    max-width: 1000px;
 }
 
 .corridor-hero p {
-    max-width: 900px;
+    color: #26352b;
+    max-width: 650px;
     font-size: 1.15rem;
-    line-height: 1.7;
+}
+
+.corridor-hero .eyebrow {
+    color: #26352b;
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
 
