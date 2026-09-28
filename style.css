@@ -12,25 +12,42 @@ body {
 }
 
 
-/* Navigation */
+/* =========================================
+   NAVIGATION
+   ========================================= */
 
-nav {
+.navbar {
+    width: 100%;
     height: 75px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 7%;
     background: #f4f1e8;
 }
 
+.nav-container {
+    width: 100%;
+    height: 100%;
+    padding: 0 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .logo {
+    color: #26352b;
+    text-decoration: none;
+
     font-size: 1.1rem;
     font-weight: bold;
     letter-spacing: 1px;
 }
 
+.logo:hover {
+    text-decoration: none;
+}
+
 .nav-links {
     display: flex;
+    align-items: center;
     gap: 30px;
 }
 
