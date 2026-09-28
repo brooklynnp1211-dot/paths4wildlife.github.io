@@ -2839,3 +2839,72 @@ body > footer p {
     }
 
 }
+/* =========================
+   EMBEDDED RESEARCH SLIDESHOW
+   ========================= */
+
+.slideshow-section {
+    background: #f4f1e8;
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.slideshow-section .section-label {
+    color: #687a63;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.slideshow-section h2 {
+    color: #26352b;
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+}
+
+.slideshow-intro {
+    max-width: 750px;
+    margin: 0 auto 35px;
+    color: #4f5a51;
+    line-height: 1.7;
+}
+
+.pdf-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(38, 53, 43, 0.12);
+}
+
+.pdf-container iframe {
+    width: 100%;
+    height: 750px;
+    border: none;
+    border-radius: 8px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .slideshow-section {
+        padding: 60px 5%;
+    }
+
+    .slideshow-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .pdf-container {
+        padding: 8px;
+    }
+
+    .pdf-container iframe {
+        height: 600px;
+    }
+
+}
