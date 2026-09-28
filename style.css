@@ -2242,3 +2242,219 @@ body > footer p {
     }
 
 }
+/* =========================================================
+   FINAL PATHS 4 WILDLIFE NAVIGATION
+   ========================================================= */
+
+.navbar {
+    width: 100% !important;
+    height: 95px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: #f4f1e8 !important;
+
+    position: relative !important;
+    z-index: 1000 !important;
+
+    overflow: hidden !important;
+}
+
+
+.nav-container {
+    width: 100% !important;
+    max-width: 1400px !important;
+    height: 95px !important;
+
+    margin: 0 auto !important;
+    padding: 0 60px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+
+/* =========================================================
+   LOGO + PATHS 4 WILDLIFE
+   ========================================================= */
+
+.navbar .brand {
+    display: flex !important;
+
+    align-items: center !important;
+
+    gap: 12px !important;
+
+    width: auto !important;
+    height: 95px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    position: relative !important;
+
+    color: #26352b !important;
+
+    text-decoration: none !important;
+
+    flex-shrink: 0 !important;
+}
+
+
+/* THE ACTUAL LOGO */
+
+.navbar .brand .nav-logo {
+    display: block !important;
+
+    position: static !important;
+
+    width: 60px !important;
+    height: 60px !important;
+
+    min-width: 60px !important;
+    max-width: 60px !important;
+
+    min-height: 60px !important;
+    max-height: 60px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    object-fit: contain !important;
+
+    transform: none !important;
+}
+
+
+/* PATHS 4 WILDLIFE TEXT */
+
+.navbar .brand span {
+    display: block !important;
+
+    position: static !important;
+
+    color: #26352b !important;
+
+    font-size: 1.45rem !important;
+    font-weight: 700 !important;
+
+    letter-spacing: 1px !important;
+
+    white-space: nowrap !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* =========================================================
+   NAVIGATION LINKS
+   ========================================================= */
+
+.navbar .nav-links {
+    display: flex !important;
+
+    align-items: center !important;
+
+    gap: 42px !important;
+
+    width: auto !important;
+    height: auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    flex-shrink: 0 !important;
+}
+
+
+.navbar .nav-links a {
+    display: block !important;
+
+    position: static !important;
+
+    color: #26352b !important;
+
+    text-decoration: none !important;
+
+    font-size: 1.05rem !important;
+    font-weight: 500 !important;
+
+    white-space: nowrap !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+.navbar .nav-links a:hover {
+    opacity: 0.65 !important;
+
+    text-decoration: none !important;
+}
+
+
+/* =========================================================
+   MAKE SURE THE HERO STARTS DIRECTLY AFTER NAVBAR
+   ========================================================= */
+
+.hero {
+    margin-top: 0 !important;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        height: auto !important;
+
+        overflow: visible !important;
+    }
+
+    .nav-container {
+        height: auto !important;
+
+        padding: 20px !important;
+
+        flex-direction: column !important;
+
+        gap: 20px !important;
+    }
+
+    .navbar .brand {
+        height: auto !important;
+    }
+
+    .navbar .brand .nav-logo {
+        width: 50px !important;
+        height: 50px !important;
+
+        min-width: 50px !important;
+        max-width: 50px !important;
+
+        min-height: 50px !important;
+        max-height: 50px !important;
+    }
+
+    .navbar .brand span {
+        font-size: 1.25rem !important;
+    }
+
+    .navbar .nav-links {
+        gap: 20px !important;
+
+        flex-wrap: wrap !important;
+
+        justify-content: center !important;
+    }
+
+    .navbar .nav-links a {
+        font-size: 0.95rem !important;
+    }
+}
