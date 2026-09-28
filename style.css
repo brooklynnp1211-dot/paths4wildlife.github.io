@@ -2871,7 +2871,7 @@ body > footer p {
 }
 
 .pdf-container {
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
     background: white;
     padding: 10px;
@@ -2881,7 +2881,7 @@ body > footer p {
 
 .pdf-container iframe {
     width: 100%;
-    height: 900px;
+    height: 1000px;
     border: none;
     border-radius: 8px;
 }
