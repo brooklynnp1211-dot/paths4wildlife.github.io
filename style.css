@@ -2908,3 +2908,72 @@ body > footer p {
     }
 
 }
+/* =========================================================
+   GENETICS CONNECTION DIAGRAM FIX
+   ========================================================= */
+
+.connection {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.flow {
+    width: 100%;
+    max-width: 1100px;
+    margin: 40px auto 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.flow > div {
+    flex: 1;
+    min-width: 0;
+    max-width: 210px;
+    min-height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 25px 15px;
+    box-sizing: border-box;
+
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+    border-radius: 10px;
+
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.flow span {
+    flex-shrink: 0;
+    color: white;
+    font-size: 2rem;
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+
+    .flow {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .flow > div {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .flow span {
+        transform: rotate(90deg);
+    }
+}
