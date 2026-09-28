@@ -94,13 +94,17 @@ nav > .nav-links {
     align-items: center;
     padding: 80px 10%;
 
-    background:
+    background-image:
         linear-gradient(
             rgba(25, 50, 35, 0.72),
             rgba(25, 50, 35, 0.72)
         ),
-        url("https://images.unsplash.com/photo-1448375240586-882707db888b")
-        center / cover;
+        url("https://images.unsplash.com/photo-1448375240586-882707db888b");
+    background-position: center;
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
 }
 
 .hero-content {
