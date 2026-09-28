@@ -2502,8 +2502,8 @@ body > footer p {
 /* IMPORTANT: controls the actual image size */
 
 .brand img {
-    width: 65px;
-    height: 65px;
+    width: 80px;
+    height: 80px;
 
     object-fit: contain;
     display: block;
