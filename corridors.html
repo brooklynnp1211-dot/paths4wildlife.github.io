@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wildlife Corridors | Paths 4 Wildlife</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Paths 4 Wildlife</div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="genetics.html">Genetics</a>
+            <a href="corridors.html">Corridors</a>
+            <a href="policy.html">Policy</a>
+            <a href="society.html">Society</a>
+        </div>
+    </nav>
+
+
+    <!-- Page Header -->
+    <section class="corridor-hero">
+
+        <div class="corridor-hero-content">
+
+            <p class="section-label">WILDLIFE CORRIDORS</p>
+
+            <h1>
+                Connecting<br>
+                Fragmented Landscapes
+            </h1>
+
+            <p>
+                Wildlife corridors connect areas of habitat that have
+                become separated by roads, development, agriculture,
+                and other human activities.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- What Is a Corridor? -->
+    <section class="corridor-intro">
+
+        <div class="intro-text">
+
+            <p class="section-label">WHAT IS A WILDLIFE CORRIDOR?</p>
+
+            <h2>
+                Creating pathways through fragmented habitats
+            </h2>
+
+            <p>
+                Wildlife corridors are areas of land or habitat that
+                connect separated populations or habitat patches.
+                These connections can allow animals to move between
+                areas that they need for feeding, breeding, migration,
+                and shelter.
+            </p>
+
+            <p>
+                Habitat fragmentation can make it difficult for
+                wildlife to move across landscapes. Corridors can
+                help maintain connectivity and allow populations to
+                remain connected.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Corridor Diagram -->
+    <section class="diagram-section">
+
+        <p class="section-label">CONNECTIVITY</p>
+
+        <h2>Without vs. With a Corridor</h2>
+
+        <div class="comparison">
+
+            <!-- Without Corridor -->
+            <div class="landscape-card">
+
+                <h3>Without a Corridor</h3>
+
+                <div class="landscape">
+
+                    <div class="habitat">
+                        🌲🌲🌲
+                        <br>
+                        🦌
+                    </div>
+
+                    <div class="barrier">
+                        🛣️
+                    </div>
+
+                    <div class="habitat">
+                        🌲🌲🌲
+                        <br>
+                        🦌
+                    </div>
+
+                </div>
+
+                <p>
+                    Roads and development can separate wildlife
+                    populations and make movement more difficult.
+                </p>
+
+            </div>
+
+
+            <!-- With Corridor -->
+            <div class="landscape-card">
+
+                <h3>With a Corridor</h3>
+
+                <div class="landscape connected">
+
+                    <div class="habitat">
+                        🌲🌲🌲
+                        <br>
+                        🦌
+                    </div>
+
+                    <div class="corridor-path">
+                        🌿🌿🌿
+                        <br>
+                        🌿🌿🌿
+                    </div>
+
+                    <div class="habitat">
+                        🌲🌲🌲
+                        <br>
+                        🦌
+                    </div>
+
+                </div>
+
+                <p>
+                    Connected habitat can provide animals with a
+                    pathway between otherwise isolated areas.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Current Map -->
+    <section class="map-section">
+
+        <p class="section-label">EXPLORE CURRENT DATA</p>
+
+        <h2>Where are wildlife corridors?</h2>
+
+        <p>
+            Wildlife movement and migration have been mapped across
+            different regions of the United States. Explore current
+            migration and connectivity data through the U.S. Geological
+            Survey's Western Migrations project.
+        </p>
+
+        <a
+            href="https://www.usgs.gov/tools/western-migrations"
+            class="button"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            Explore the USGS Wildlife Map →
+
+        </a>
+
+        <p class="map-caption">
+            Source: U.S. Geological Survey, Western Migrations.
+        </p>
+
+    </section>
+
+
+    <!-- Ecological Benefits -->
+    <section class="benefits-section">
+
+        <p class="section-label">ECOLOGICAL BENEFITS</p>
+
+        <h2>What do wildlife corridors do?</h2>
+
+        <p class="benefits-intro">
+            Corridors can provide several ecological functions.
+            Click each topic to learn more.
+        </p>
+
+
+        <div class="benefit-buttons">
+
+            <button onclick="showBenefit('movement')">
+                🦌 Movement
+            </button>
+
+            <button onclick="showBenefit('gene-flow')">
+                🧬 Gene Flow
+            </button>
+
+            <button onclick="showBenefit('habitat')">
+                🌲 Habitat Access
+            </button>
+
+            <button onclick="showBenefit('dispersal')">
+                🗺️ Dispersal
+            </button>
+
+            <button onclick="showBenefit('recolonization')">
+                🔄 Recolonization
+            </button>
+
+            <button onclick="showBenefit('isolation')">
+                🛡️ Reduced Isolation
+            </button>
+
+        </div>
+
+
+        <!-- Information Box -->
+        <div id="benefit-display" class="benefit-display">
+
+            <h3>🦌 Movement</h3>
+
+            <p>
+                Corridors can provide pathways that allow animals
+                to move between different habitat patches. Movement
+                may be important for finding food, water, mates,
+                shelter, and seasonal habitats.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Genetics Connection -->
+    <section class="genetics-connection">
+
+        <div>
+
+            <p class="section-label">FROM CORRIDORS TO GENETICS</p>
+
+            <h2>
+                Does a corridor actually work?
+            </h2>
+
+            <p>
+                A corridor may appear connected on a map, but
+                researchers also need evidence that animals are
+                actually using it. Genetic data can provide evidence
+                of connectivity by helping researchers investigate
+                gene flow between populations.
+            </p>
+
+            <a href="genetics.html" class="button">
+                Explore the Genetics →
+            </a>
+
+        </div>
+
+        <div class="connection-flow">
+
+            <div>🌲<br>Habitat</div>
+
+            <span>→</span>
+
+            <div>🦌<br>Movement</div>
+
+            <span>→</span>
+
+            <div>🧬<br>Gene Flow</div>
+
+            <span>→</span>
+
+            <div>🔗<br>Connectivity</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Human Connection -->
+    <section class="human-connection">
+
+        <p class="section-label">THE HUMAN CONNECTION</p>
+
+        <h2>
+            Corridors are more than ecological pathways.
+        </h2>
+
+        <p>
+            Wildlife corridors often cross landscapes that are also
+            used by people. Roads, farms, private property, and
+            communities can all influence where corridors can be
+            established and how they are managed.
+        </p>
+
+        <div class="next-topics">
+
+            <a href="policy.html">
+                <strong>🏛️ Policy</strong>
+                <span>How conservation decisions are made →</span>
+            </a>
+
+            <a href="society.html">
+                <strong>👥 Society</strong>
+                <span>How corridors affect communities →</span>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>Paths 4 Wildlife</p>
+
+        <p>
+            Exploring wildlife, genetics, policy, and society.
+        </p>
+
+    </footer>
+
+
+    <!-- Interactive JavaScript -->
+    <script>
+
+        function showBenefit(benefit) {
+
+            const display = document.getElementById("benefit-display");
+
+            if (benefit === "movement") {
+
+                display.innerHTML = `
+                    <h3>🦌 Movement</h3>
+                    <p>
+                        Corridors can provide pathways that allow
+                        animals to move between different habitat
+                        patches. Movement can help animals reach
+                        food, water, breeding areas, shelter, and
+                        seasonal habitats.
+                    </p>
+                `;
+
+            }
+
+            else if (benefit === "gene-flow") {
+
+                display.innerHTML = `
+                    <h3>🧬 Gene Flow</h3>
+                    <p>
+                        When individuals move between populations
+                        and reproduce, genes can be exchanged between
+                        populations. This movement of genes is known
+                        as gene flow and can provide evidence of
+                        population connectivity.
+                    </p>
+                `;
+
+            }
+
+            else if (benefit === "habitat") {
+
+                display.innerHTML = `
+                    <h3>🌲 Habitat Access</h3>
+                    <p>
+                        Corridors can help animals access different
+                        habitat patches that provide food, water,
+                        shelter, and breeding opportunities.
+                    </p>
+                `;
+
+            }
+
+            else if (benefit === "dispersal") {
+
+                display.innerHTML = `
+                    <h3>🗺️ Dispersal</h3>
+                    <p>
+                        Corridors can provide routes for individuals
+                        to disperse away from their original
+                        population and move into new areas.
+                    </p>
+                `;
+
+            }
+
+            else if (benefit === "recolonization") {
+
+                display.innerHTML = `
+                    <h3>🔄 Recolonization</h3>
+                    <p>
+                        If a population disappears from an area,
+                        connected landscapes can provide pathways
+                        through which individuals may eventually
+                        return and re-establish a population.
+                    </p>
+                `;
+
+            }
+
+            else if (benefit === "isolation") {
+
+                display.innerHTML = `
+                    <h3>🛡️ Reduced Isolation</h3>
+                    <p>
+                        By connecting habitat patches, corridors
+                        can reduce the degree to which wildlife
+                        populations are isolated from one another.
+                        This can be particularly important in
+                        fragmented landscapes.
+                    </p>
+                `;
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
