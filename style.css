@@ -209,12 +209,13 @@ footer p {
 }
 
 
-/* Mobile */
-
 @media (max-width: 800px) {
 
-    nav {
+    .navbar {
         height: auto;
+    }
+
+    .nav-container {
         padding: 20px;
         flex-direction: column;
         gap: 15px;
