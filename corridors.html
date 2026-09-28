@@ -7,12 +7,15 @@
 
     <title>Wildlife Corridors | Paths 4 Wildlife</title>
 
-    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=3">
 </head>
 
 <body>
 
-    <!-- NAVIGATION -->
+    <!-- ================================
+         NAVIGATION
+         ================================ -->
+
     <nav class="navbar">
         <div class="nav-container">
 
@@ -32,7 +35,10 @@
     </nav>
 
 
-    <!-- HERO -->
+    <!-- ================================
+         HERO
+         ================================ -->
+
     <header class="corridor-hero">
 
         <p class="eyebrow">
@@ -44,7 +50,7 @@
             Fragmented Landscapes
         </h1>
 
-        <p>
+        <p class="hero-description">
             Wildlife corridors connect areas of habitat that have become
             separated by roads, development, agriculture, and other human
             activities.
@@ -53,10 +59,13 @@
     </header>
 
 
-    <!-- INTRODUCTION -->
+    <!-- ================================
+         WHAT IS A CORRIDOR?
+         ================================ -->
+
     <section class="corridor-intro">
 
-        <p class="eyebrow">
+        <p class="section-label">
             What is a wildlife corridor?
         </p>
 
@@ -80,10 +89,13 @@
     </section>
 
 
-    <!-- WITHOUT VS WITH -->
-    <section class="diagram-section">
+    <!-- ================================
+         WITHOUT VS. WITH
+         ================================ -->
 
-        <p class="eyebrow">
+    <section class="corridor-comparison-section">
+
+        <p class="section-label">
             Connectivity
         </p>
 
@@ -93,8 +105,7 @@
 
         <div class="comparison">
 
-            <!-- WITHOUT -->
-            <div class="landscape-card without">
+            <div class="landscape-card">
 
                 <h3>
                     Without a Corridor
@@ -118,8 +129,7 @@
             </div>
 
 
-            <!-- WITH -->
-            <div class="landscape-card with">
+            <div class="landscape-card">
 
                 <h3>
                     With a Corridor
@@ -149,12 +159,15 @@
     </section>
 
 
-    <!-- INTERACTIVE DIAGRAM -->
+    <!-- ================================
+         INTERACTIVE DIAGRAM
+         ================================ -->
+
     <section class="interactive-section">
 
         <div class="interactive-heading">
 
-            <p class="eyebrow">
+            <p class="section-label">
                 Explore the connection
             </p>
 
@@ -174,6 +187,7 @@
 
 
             <!-- STEP 1 -->
+
             <button
                 class="interactive-step active"
                 type="button"
@@ -206,6 +220,7 @@
 
 
             <!-- STEP 2 -->
+
             <button
                 class="interactive-step"
                 type="button"
@@ -238,6 +253,7 @@
 
 
             <!-- STEP 3 -->
+
             <button
                 class="interactive-step"
                 type="button"
@@ -270,6 +286,7 @@
 
 
             <!-- STEP 4 -->
+
             <button
                 class="interactive-step"
                 type="button"
@@ -302,6 +319,7 @@
 
 
             <!-- STEP 5 -->
+
             <button
                 class="interactive-step"
                 type="button"
@@ -330,7 +348,8 @@
         </div>
 
 
-        <!-- INFORMATION DISPLAY -->
+        <!-- INFORMATION BOX -->
+
         <div class="interactive-display">
 
             <h3 id="interactive-title">
@@ -348,10 +367,13 @@
     </section>
 
 
-    <!-- CURRENT CORRIDORS / MAP -->
+    <!-- ================================
+         REAL-WORLD DATA
+         ================================ -->
+
     <section class="map-section">
 
-        <p class="eyebrow">
+        <p class="section-label">
             Explore real-world data
         </p>
 
@@ -377,10 +399,13 @@
     </section>
 
 
-    <!-- BENEFITS -->
+    <!-- ================================
+         ECOLOGICAL BENEFITS
+         ================================ -->
+
     <section class="benefits-section">
 
-        <p class="eyebrow">
+        <p class="section-label">
             Ecological benefits
         </p>
 
@@ -436,18 +461,15 @@
         </div>
 
 
-        <div
-            class="benefit-display"
-            id="benefit-display"
-        >
+        <div class="benefit-display" id="benefit-display">
 
             <h3>
-                Wildlife Movement
+                🦌 Wildlife Movement
             </h3>
 
             <p>
-                Corridors provide routes that can allow animals to move
-                between habitat patches.
+                Corridors provide pathways that can allow wildlife to move
+                between separated habitat patches.
             </p>
 
         </div>
@@ -455,10 +477,13 @@
     </section>
 
 
-    <!-- GENETICS CONNECTION -->
+    <!-- ================================
+         GENETICS CONNECTION
+         ================================ -->
+
     <section class="genetics-connection">
 
-        <p class="eyebrow">
+        <p class="section-label">
             From corridors to genetics
         </p>
 
@@ -511,10 +536,13 @@
     </section>
 
 
-    <!-- HUMAN CONNECTION -->
+    <!-- ================================
+         HUMAN CONNECTION
+         ================================ -->
+
     <section class="human-connection">
 
-        <p class="eyebrow">
+        <p class="section-label">
             Beyond ecology
         </p>
 
@@ -544,7 +572,10 @@
     </section>
 
 
-    <!-- FOOTER -->
+    <!-- ================================
+         FOOTER
+         ================================ -->
+
     <footer>
 
         <p>
@@ -554,12 +585,13 @@
     </footer>
 
 
-    <!-- INTERACTIVE JAVASCRIPT -->
+    <!-- ================================
+         JAVASCRIPT
+         ================================ -->
+
     <script>
 
-        /* =========================================
-           INTERACTIVE CORRIDOR DIAGRAM
-           ========================================= */
+        /* Interactive diagram */
 
         const interactiveSteps =
             document.querySelectorAll(".interactive-step");
@@ -592,9 +624,7 @@
         });
 
 
-        /* =========================================
-           BENEFIT INFORMATION
-           ========================================= */
+        /* Ecological benefit buttons */
 
         function showBenefit(benefit) {
 
@@ -614,7 +644,6 @@
 
             }
 
-
             else if (benefit === "geneFlow") {
 
                 display.innerHTML = `
@@ -627,7 +656,6 @@
                 `;
 
             }
-
 
             else if (benefit === "habitat") {
 
@@ -642,7 +670,6 @@
 
             }
 
-
             else if (benefit === "dispersal") {
 
                 display.innerHTML = `
@@ -656,7 +683,6 @@
 
             }
 
-
             else if (benefit === "recolonization") {
 
                 display.innerHTML = `
@@ -668,7 +694,6 @@
                 `;
 
             }
-
 
             else if (benefit === "isolation") {
 
