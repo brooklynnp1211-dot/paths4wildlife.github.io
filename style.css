@@ -1851,3 +1851,163 @@ body > footer p {
     }
 
 }
+/* =========================================
+   HOME PAGE — FINAL NAV + HERO
+   ========================================= */
+
+/* Navigation */
+.navbar {
+    width: 100%;
+    height: 95px;
+    background: #f4f1e8;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    color: #26352b;
+    text-decoration: none;
+    font-size: 1.45rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.navbar .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.navbar .nav-links a {
+    color: #26352b;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+
+/* =========================================
+   HOME HERO
+   ========================================= */
+
+.hero {
+    width: 100%;
+    min-height: calc(100vh - 95px);
+
+    margin: 0;
+    padding: 0 7%;
+
+    display: flex;
+    align-items: flex-end;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            rgba(25, 50, 35, 0.68),
+            rgba(25, 50, 35, 0.78)
+        ),
+        url("https://images.unsplash.com/photo-1448375240586-882707db888b")
+        center center / cover no-repeat;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 850px;
+
+    color: white;
+
+    padding-bottom: 70px;
+}
+
+.hero .eyebrow {
+    color: white;
+    font-size: 0.9rem;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: clamp(4rem, 8vw, 7rem);
+    line-height: 0.95;
+    margin-bottom: 30px;
+}
+
+.hero .intro {
+    color: white;
+    max-width: 700px;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.hero .button {
+    display: inline-block;
+    padding: 14px 25px;
+
+    background: #e6c98a;
+    color: #26352b;
+
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.hero .button:hover {
+    opacity: 0.85;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        height: auto;
+    }
+
+    .nav-container {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar .nav-links {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: calc(100vh - 140px);
+        padding: 0 25px;
+    }
+
+    .hero-content {
+        padding-bottom: 50px;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+}
