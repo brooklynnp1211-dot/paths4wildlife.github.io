@@ -2079,39 +2079,25 @@ body > footer p {
     text-decoration: none;
 }
 
-
-/* Wildlife logo */
-
 .site-logo {
     width: 65px;
     height: 65px;
-
     object-fit: contain;
-
     display: block;
 }
 
-
-/* Paths 4 Wildlife text */
-
 .logo-text {
     color: #26352b;
-
     font-size: 1.45rem;
     font-weight: 700;
-
     letter-spacing: 1px;
 }
-
-
-/* Make sure the navigation stays aligned */
 
 .navbar .nav-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 
 /* Mobile */
 
@@ -2125,6 +2111,12 @@ body > footer p {
         width: 55px;
         height: 55px;
     }
+
+    .logo-text {
+        font-size: 1.2rem;
+    }
+
+}
 /* =========================================
    FINAL NAVBAR WITH LOGO
    ========================================= */
