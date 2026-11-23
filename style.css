@@ -2977,3 +2977,367 @@ body > footer p {
         transform: rotate(90deg);
     }
 }
+/* =========================================
+   POLICY PAGE
+========================================= */
+
+.policy-hero {
+    min-height: 520px;
+    background:
+        linear-gradient(rgba(25, 50, 35, 0.72), rgba(25, 50, 35, 0.72)),
+        url("images/policy-background.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f4f1e8;
+    padding: 60px 30px;
+}
+
+.policy-hero-overlay {
+    max-width: 850px;
+}
+
+.policy-eyebrow {
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.policy-hero h1 {
+    font-size: clamp(40px, 6vw, 75px);
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.policy-hero-text {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.policy-button {
+    display: inline-block;
+    background: #e6c98a;
+    color: #26352b;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.policy-button:hover {
+    transform: translateY(-3px);
+    background: #f0d9a8;
+}
+
+
+/* INTRODUCTION */
+
+.policy-introduction {
+    padding: 90px 10%;
+    background: #f4f1e8;
+}
+
+.policy-intro-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.section-label {
+    color: #73866d;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.policy-introduction h2,
+.justice-heading h2,
+.community-text h2,
+.balance-heading h2,
+.conclusion-content h2 {
+    color: #26352b;
+    font-size: clamp(30px, 4vw, 48px);
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.policy-introduction p,
+.justice-heading p,
+.community-text p,
+.balance-heading p,
+.conclusion-content p {
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+
+/* ENVIRONMENTAL JUSTICE */
+
+.environmental-justice {
+    background: #dfe5d9;
+    padding: 90px 8%;
+}
+
+.justice-heading {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 50px;
+}
+
+.justice-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.justice-card {
+    background: #f4f1e8;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(38, 53, 43, 0.08);
+}
+
+.justice-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.justice-card h3 {
+    font-size: 25px;
+    color: #26352b;
+    margin-bottom: 15px;
+}
+
+.justice-card p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.justice-card ul {
+    padding-left: 22px;
+}
+
+.justice-card li {
+    margin-bottom: 14px;
+    line-height: 1.6;
+}
+
+
+/* COMMUNITY */
+
+.policy-community {
+    background: #f4f1e8;
+    padding: 90px 10%;
+}
+
+.community-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+}
+
+.community-points {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.community-point {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 25px;
+    background: #dfe5d9;
+    border-radius: 15px;
+}
+
+.community-point span {
+    font-size: 25px;
+    font-weight: bold;
+    color: #73866d;
+}
+
+.community-point h3 {
+    margin-bottom: 10px;
+    color: #26352b;
+}
+
+.community-point p {
+    margin: 0;
+    font-size: 15px;
+}
+
+
+/* CONSERVATION BALANCE */
+
+.policy-balance {
+    padding: 90px 8%;
+    background: #26352b;
+    color: #f4f1e8;
+}
+
+.balance-heading {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 50px;
+}
+
+.balance-heading h2 {
+    color: #f4f1e8;
+}
+
+.balance-heading .section-label {
+    color: #e6c98a;
+}
+
+.balance-grid {
+    display: grid;
+    grid-template-columns: 1fr 80px 1fr;
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+    align-items: stretch;
+}
+
+.balance-item {
+    padding: 40px;
+    border-radius: 18px;
+    color: #26352b;
+}
+
+.wildlife-balance {
+    background: #dfe5d9;
+}
+
+.community-balance {
+    background: #e6c98a;
+}
+
+.balance-item h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.balance-item p {
+    line-height: 1.8;
+}
+
+.balance-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.balance-center span {
+    font-size: 55px;
+    color: #e6c98a;
+    font-weight: bold;
+}
+
+.balance-result {
+    text-align: center;
+    max-width: 800px;
+    margin: 60px auto 0;
+    padding: 40px;
+    border: 1px solid rgba(230, 201, 138, 0.5);
+    border-radius: 18px;
+}
+
+.result-label {
+    color: #e6c98a;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.balance-result h3 {
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.balance-result p {
+    line-height: 1.8;
+}
+
+
+/* CONCLUSION */
+
+.policy-conclusion {
+    background: #dfe5d9;
+    padding: 90px 10%;
+}
+
+.conclusion-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+
+/* FOOTER */
+
+.policy-footer {
+    background: #26352b;
+    color: #f4f1e8;
+    text-align: center;
+    padding: 35px;
+}
+
+.policy-footer p {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.policy-footer span {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 800px) {
+
+    .justice-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .community-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .balance-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .balance-center {
+        height: 40px;
+    }
+
+    .balance-center span {
+        font-size: 40px;
+    }
+
+    .policy-hero h1 {
+        font-size: 42px;
+    }
+
+    .policy-introduction,
+    .environmental-justice,
+    .policy-community,
+    .policy-balance,
+    .policy-conclusion {
+        padding: 60px 7%;
+    }
+}
